@@ -15,7 +15,7 @@ public class SecurityGroup extends Handler {
         if(RequestType.ACCESS.equals(request.getRequestType())) {
             System.out.println("Security group will handle: " + request.getTitle());
         } else {
-            System.out.println("Escalating to " + successor.toString());
+            System.out.println(this.toString() + " escalating to " + successor.toString());
             successor.handleRequest(request);
         }
     }

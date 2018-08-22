@@ -10,7 +10,7 @@ public class NetworkSupport extends Handler{
         if(RequestType.NETWORK.equals(request.getRequestType())) {
             System.out.println("Network support will handle: " + request.getTitle());
         } else {
-            System.out.println("Escalating to " + successor.toString());
+            System.out.println(this.toString() + " escalating to " + successor.toString());
             successor.handleRequest(request);
         }
     }
