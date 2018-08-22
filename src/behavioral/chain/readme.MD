@@ -14,3 +14,8 @@ Handler - Has a method for handling a the request, and a successor to call if it
   - java.util.logging.Logger#log()  :the debug levels
   - Spring Security Filter Chain
   
+Pitfalls:
+- Handling/ handler guarantee
+- Runtime configuration risk
+- Chain length / performance issues
+  
